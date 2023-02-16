@@ -4,25 +4,18 @@
   
     
     <entry>
-      <title>第一篇文章</title>
-      <link href="/2023/02/15/mercy%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2023/02/15/mercy%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-      
-        <content type="html"><![CDATA[<h2 id="我的第一篇文章"><a href="#我的第一篇文章" class="headerlink" title="我的第一篇文章"></a>我的第一篇文章</h2>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>第三篇文章</title>
       <link href="/2023/02/15/mercy%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/"/>
       <url>/2023/02/15/mercy%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</url>
       
         <content type="html"><![CDATA[<h2 id="我的第三篇文章"><a href="#我的第三篇文章" class="headerlink" title="我的第三篇文章"></a>我的第三篇文章</h2>]]></content>
       
+      
+      <categories>
+          
+          <category> 后端 </category>
+          
+      </categories>
       
       
     </entry>
@@ -37,6 +30,12 @@
         <content type="html"><![CDATA[<h2 id="我的第二篇文章"><a href="#我的第二篇文章" class="headerlink" title="我的第二篇文章"></a>我的第二篇文章</h2>]]></content>
       
       
+      <categories>
+          
+          <category> 碎碎念 </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -49,6 +48,31 @@
       
         <content type="html"><![CDATA[<h2 id="我的第四篇文章"><a href="#我的第四篇文章" class="headerlink" title="我的第四篇文章"></a>我的第四篇文章</h2>]]></content>
       
+      
+      <categories>
+          
+          <category> 哎嘿 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一篇文章</title>
+      <link href="/2023/02/15/mercy%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2023/02/15/mercy%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="我的第一篇文章"><a href="#我的第一篇文章" class="headerlink" title="我的第一篇文章"></a>我的第一篇文章</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
       
       
     </entry>
