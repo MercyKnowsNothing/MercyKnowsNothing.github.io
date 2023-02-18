@@ -9,8 +9,22 @@
 #footer {
     background: transparent !important;
 }
+
 #page-header {
     background: transparent !important;
+}
+
+#category {
+    background: var(--trans-light) !important;
+    backdrop-filter: var(--backdrop-filter);
+    border: var(--border-style);
+    border-radius: 20px;
+}
+[data-theme="dark"] #category {
+    background: var(--trans-dark) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    border: var(--border-style) !important;
+    border-radius: 20px;
 }
 
 #page-header.not-home-page {
@@ -21,6 +35,7 @@
 #footer::before {
     background: transparent !important;
 }
+
 #page-header::before {
     background: transparent !important;
 }
@@ -29,6 +44,7 @@
 [data-theme="dark"] #footer::before {
     background: transparent !important;
 }
+
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
 }
@@ -39,6 +55,7 @@
     background: #1e1e1e;
     color: antiquewhite;
 }
+
 /* 鼠标悬浮状态 */
 [data-theme="dark"] .magnet_link_context:hover {
     background: #3ecdf1;
@@ -74,10 +91,12 @@
     left: 50% !important;
     transform: translateX(-50%) !important;
 }
+
 /* 子菜单横向展示 */
 #nav .menus_items .menus_item:hover .menus_item_child {
     display: flex !important;
 }
+
 /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
 .menus_items .menus_item:nth-child(5) .menus_item_child {
     left: -38px;
@@ -91,17 +110,21 @@
 [data-theme="light"] #post-info {
     animation: none;
 }
+
 /* 夜间模式生效 */
 [data-theme="dark"] #site-name,
 [data-theme="dark"] #site-title {
     animation: light_15px 10s linear infinite;
 }
+
 [data-theme="dark"] #site-subtitle {
     animation: light_10px 10s linear infinite;
 }
+
 [data-theme="dark"] #post-info {
     animation: light_5px 10s linear infinite;
 }
+
 /* 关键帧描述 */
 @keyframes light_15px {
     0% {
@@ -237,6 +260,7 @@
     -moz-animation: Gradient 10s ease infinite;
     animation: Gradient 10s ease infinite !important;
 }
+
 @-webkit-keyframes Gradient {
     0% {
         background-position: 0% 50%;
@@ -248,6 +272,7 @@
         background-position: 0% 50%;
     }
 }
+
 @-moz-keyframes Gradient {
     0% {
         background-position: 0% 50%;
@@ -259,6 +284,7 @@
         background-position: 0% 50%;
     }
 }
+
 @keyframes Gradient {
     0% {
         background-position: 0% 50%;
@@ -289,7 +315,7 @@
     width: 16px;
     height: 16px;
     /* 这里改变跟随的底色 */
-    background: rgb(57,197,187);
+    background: rgb(57, 197, 187);
     border-radius: 8px;
     opacity: 0.25;
     z-index: 10086;
@@ -371,6 +397,7 @@ div#archive {
 [data-theme="dark"] #footer::before {
     background: transparent !important;
 }
+
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
 }
@@ -379,6 +406,7 @@ div#archive {
 .read-mode #aside-content .card-widget {
     background: rgba(158, 204, 171, 0.5) !important;
 }
+
 .read-mode div#post {
     background: rgba(158, 204, 171, 0.5) !important;
 }
@@ -388,7 +416,125 @@ div#archive {
     background: rgba(25, 25, 25, 0.9) !important;
     color: #ffffff;
 }
+
 [data-theme="dark"] .read-mode div#post {
     background: rgba(25, 25, 25, 0.9) !important;
     color: #ffffff;
 }
+
+/* 阿里云图标引入 */
+@import "//at.alicdn.com/t/font_2264842_b004iy0kk2b.css";
+
+/*.iconfont {*/
+/*    font-family: "iconfont" !important;*/
+/*    font-size: 3em;*/
+/*    !* 可以定义图标大小 *!*/
+/*    font-style: normal;*/
+/*    -webkit-font-smoothing: antialiased;*/
+/*    -moz-osx-font-smoothing: grayscale;*/
+/*}*/
+
+
+/* 顶部图标大小 */
+svg.icon {
+    width: 1.50em;
+    height: 1.50em;
+    vertical-align: -0.4em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/* 社交图标大小 */
+svg.social_icon {
+    width: 1.50em;
+    height: 1.50em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+
+
+/* cat */
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.neko {
+    width: 250px;
+    height: 250px;
+    background-image: url("https://bu.dusays.com/2022/07/20/62d812db74be9.png");
+    position: absolute;
+    right: 25px !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(50%);
+    cursor: pointer;
+    font-family: tzy;
+    font-weight: 600;
+    font-size: 16px;
+    color: #6f42c1;
+    display: none;
+}
+
+.neko::after {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");
+    background-size: contain;
+    z-index: 9999;
+    position: absolute;
+    right: 65%;
+    top: -30%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.neko.showMsg::after {
+    content: attr(data-msg);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.neko:hover::after {
+    content: attr(data-msg);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.neko.fontColor::after {
+    color: #333;
+}
+
+/**
+ * @description: 滚动条样式  跟猫二选一
+ */
+@media screen and (max-width:992px) {
+    ::-webkit-scrollbar {
+        width: 8px !important;
+        height: 8px !important
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 2em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(255 255 255 / .3);
+        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+        border-radius: 2em
+    }
+
+    ::-webkit-scrollbar-corner {
+        background-color: transparent
+    }
+}
+
+/* 首页文章卡片高度 */
+img.post-bg.entered.loaded {
+    height: auto !important;
+}
+
