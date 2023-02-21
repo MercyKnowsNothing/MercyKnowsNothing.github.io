@@ -4609,6 +4609,29 @@ span.mathjax-overflow {
 .snackbar-css {
   border-radius: 5px !important;
 }
+[data-theme="dark"] #web_bg {
+  background: url(https://pic.imgdb.cn/item/63ed1385f144a01007de1b93.jpg);
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  #web_bg {
+    background: url(https://s1.vika.cn/space/2023/02/18/c29ad921df494cea8d9e12839bc988fc) !important;
+    background-attachment: local !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  [data-theme="dark"] #web_bg {
+    background: url(https://pic.imgdb.cn/item/63ed1385f144a01007de1b93.jpg) !important;
+    background-attachment: local !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+}
 #article-container .btn-center {
   margin: 0 0 20px;
   text-align: center;
